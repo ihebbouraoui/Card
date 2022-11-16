@@ -1,5 +1,6 @@
 import React from "react";
 import {product} from "../App";
+import './Card.css'
 import CardEshop from "./cardTypes/cardEshop/CardEshop";
 
 const Card:React.FC<{item:product,type:string}> = ({item,type})=>{
@@ -12,7 +13,7 @@ const Card:React.FC<{item:product,type:string}> = ({item,type})=>{
         }
     }
     return(
-        <div>
+        <div className={'container'}>
             {renderComponent(type)}
         </div>
     )

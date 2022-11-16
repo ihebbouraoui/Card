@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Card from "./card/Card";
+import AnimationCard from "./card/animationCard/AnimationCard";
 export  interface product {
     id:number,
     images?:Array<string>,
@@ -32,15 +33,17 @@ const productList = [
             "https://dummyjson.com/image/i/products/8/4.jpg",
         ]
     },
+
 ]
 
 
 function App() {
   return (
     <div className="App" style={{alignItems:'center'}}>
-        {productList.map((item:product)=>(
-            <Card key={item.id.toString()} item={item} type={item.type}  />
-        ))}
+        {/*{productList.map((item:product)=>(*/}
+        {/*    <Card key={item.id.toString()} item={item} type={item.type}  />*/}
+        {/*))}*/}
+        <AnimationCard/>
     </div>
   );
 }

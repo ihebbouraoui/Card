@@ -4,10 +4,12 @@
     height: 600px;
     padding: 20px;
     display: grid;
+    position: relative;
 
 }
 .card-header {
 height: 200px;
+    position: relative;
 }
 .header-title{
     position: relative;
@@ -64,7 +66,7 @@ height: 200px;
     justify-content: space-between;
 }
 .stock-span-add-sub{
-    background-color: whitesmoke;
+    background-color: #f9eaef;
     border-radius: 34px;
     width: 32px;
     display: flex;
@@ -89,9 +91,9 @@ height: 200px;
 }
 .next-arrow{
     cursor: pointer;
-    position: fixed;
-    top: 19%;
-    right: 59%;
+    position: absolute;
+    top: 50%;
+    right: 2%;
     width: 40px;
     height: 40px;
     background-color: white;
@@ -103,12 +105,13 @@ height: 200px;
     font-size: 16px;
     font-weight: bold;
     font-family: cursive;
+    /*color: #e046848a;*/
 }
 .prev-arrow{
     cursor: pointer;
-    position: fixed;
-    top: 19%;
-    left: 25px;
+    position: absolute;
+    top: 50%;
+    left: 2%;
     width: 40px;
     height: 40px;
     background-color: white;
@@ -116,7 +119,7 @@ height: 200px;
     z-index: 999;
 }
 .btn-add{
-    background-color: #0000ff29;
+    background-color: #ff006f3b;
     color: black;
     border-radius: 20px;
     padding: 10px;
